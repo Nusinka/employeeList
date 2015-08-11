@@ -1,0 +1,35 @@
+<div class="menu form-inline navbar navbar-default">
+    <div class="left_menu form-group">
+        <h4>Персонал психбольницы</h4>
+    </div>
+    <div class="right_menu navbar-right">
+        <span class="user">{{ user.name }}</span>
+        <a href ng-click="logout()" class="btn btn-primary">Выход</a>
+    </div>
+</div>
+<div class="row">
+    <div class="right_side">
+        <div class="listJob">
+            <ul>
+                <li class="form-control" ng-repeat="person in staffList track by $index" ng-click="editPerson(person)">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <h4 class="header">{{ person.name + ' ' + person.lastName }}</h4>
+                            <span>{{ person.job }}</span>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <a href="#" ng-click="remove(person)">
+                                <span class="icon glyphicon glyphicon-remove"></span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="empty-list" ng-if="!staffList.length">
+                    <h4>No Items To Display</h4>
+                </li>
+            </ul>
+        </div>
+        <div><a href class="btn btn-primary add" ui-sref="main.add">Добавить</a></div>
+    </div>
+    <div ui-view></div>
+</div>

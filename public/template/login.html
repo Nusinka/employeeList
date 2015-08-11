@@ -1,0 +1,22 @@
+<div class="container login-form">
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <form name="myForm" ng-submit="submit(myForm)" novalidate="novalidate">
+                <h1 class="text-center">Please login</h1>
+                <input type="text" ng-model="user.name"
+                       class="form-control" placeholder="Login"
+                       required="required" autofocus="autofocus"/>
+                <input type="password" class="form-control"
+                       ng-model="user.password"
+                       placeholder="Password" required="required"/>
+                <div class="form-group has-error">
+                    <p class="control-label">{{ message }}</p>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg" type="submit" ng-click="">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

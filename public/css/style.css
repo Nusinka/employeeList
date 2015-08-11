@@ -1,0 +1,67 @@
+body {
+    background-color: #EEE;
+    width: 100%;
+}
+form[name='myForm'] {
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+.ng-touched.ng-invalid {
+    color: red;
+    background-color: rgba( 255, 0, 0, 0.25);
+}
+.listJob div.col-sm-2 {
+    padding-top: 5%;
+
+}
+.listJob .row {
+    margin: 0;
+}
+
+div.menu {
+    padding: 5px;
+    margin: 5px;
+}
+div.left_menu {
+    margin-left: 20px;
+}
+div.right_menu {
+    margin: auto;
+}
+span.user {
+    margin: 20px;
+}
+div.right_side {
+    float: left;
+    width: 40%;
+
+}
+div.listJob {
+    height: 75vh;
+    overflow-y: auto;
+}
+div.listJob li {
+    list-style-type: none;
+    height: 100%;
+}
+a.add {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.header {
+    width: 100%;
+}
+.line {
+    display: inline;
+}
+form[name='editForm'] {
+    width: 50%;
+    margin-left: 45%;
+}
+span.icon {
+    float: right;
+}
+.root > div.row {
+    margin: 0;
+}
